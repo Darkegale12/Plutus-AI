@@ -1,0 +1,54 @@
+{
+  "name": "ai-workflow-orchestrator",
+  "version": "1.0.0",
+  "description": "AI Workflow Orchestrator for Multi-Agent Operations on Cardano - Autonomous AI project manager coordinating specialized agents with on-chain transparency",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ai-workflow-orchestrator": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepare": "npm run build",
+    "test": "echo \"Tests not yet implemented\" && exit 0",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "ai",
+    "workflow",
+    "orchestrator",
+    "multi-agent",
+    "cardano",
+    "blockchain",
+    "masumi",
+    "mcp",
+    "autonomous",
+    "reputation",
+    "micropayments"
+  ],
+  "author": "Cardano AI Agent Team",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cardano-ai-agent/ai-workflow-orchestrator"
+  }
+}
