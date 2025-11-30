@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "ai-workflow-orchestrator": {
+      "command": "node",
+      "args": [
+        "d:\\cardano_hackathon\\Cardano AI Agent\\dist\\index.js"
+      ],
+      "env": {
+        "CARDANO_NETWORK": "preprod",
+        "LOG_LEVEL": "info"
+      }
+    }
+  }
+}
